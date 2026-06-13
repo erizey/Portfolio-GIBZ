@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Erisa Gashi – Portfolio | Bewerbung GIBZ Zug</title>
+<meta name="description" content="Portfolio von Erisa Gashi, Marketing & Kommunikation – Bewerbung als Fachperson Kommunikation und Marketing mit Leitungsfunktion am GIBZ Zug.">
+<style>
+  :root {
+    --zg-navy: #1a3057;
+    --zg-navy-dark: #0f1e38;
+    --zg-navy-mid: #2a4a7f;
+    --zg-red: #c8102e;
+    --zg-red-light: #e8314f;
+    --zg-silver: #f0f2f5;
+    --zg-border: #dde1e8;
+    --zg-text: #1a1a2e;
+    --zg-muted: #5a6275;
+    --zg-white: #ffffff;
+    --zg-accent-bg: #eef1f7;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
+    color: var(--zg-text);
+    background: var(--zg-white);
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  /* NAV */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--zg-navy);
+    border-bottom: 3px solid var(--zg-red);
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+  }
+
+  .nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-decoration: none;
+  }
+
+  .nav-logo {
+    width: 36px;
+    height: 36px;
+    background: var(--zg-white);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+
+  .nav-logo img { width: 30px; height: 30px; object-fit: contain; }
+
+  .nav-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--zg-white);
+    letter-spacing: 0.01em;
+  }
+
+  .nav-sub {
+    font-size: 11px;
+    color: rgba(255,255,255,0.65);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-top: 1px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 4px;
+    list-style: none;
+  }
+
+  .nav-links a {
+    color: rgba(255,255,255,0.75);
+    text-decoration: none;
+    font-size: 13px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: all .15s;
+  }
+
+  .nav-links a:hover { background: rgba(255,255,255,0.1); color: #fff; }
+
+  /* HERO */
+  .hero {
+    background: var(--zg-navy);
+    padding: 5rem 2rem 4rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 4px;
+    background: var(--zg-red);
+  }
+
+  .hero-eyebrow {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--zg-red-light);
+    margin-bottom: 1rem;
+  }
+
+  .hero-photo {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 3px solid var(--zg-red);
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-name {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    color: var(--zg-white);
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+  }
+
+  .hero-title {
+    font-size: 1.1rem;
+    color: rgba(255,255,255,0.7);
+    margin-top: 0.5rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .hero-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .hero-tag {
+    font-size: 12px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: rgba(255,255,255,0.85);
+    padding: 4px 14px;
+    border-radius: 20px;
+    letter-spacing: 0.02em;
+  }
+
+  .hero-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--zg-red);
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 24px;
+    border-radius: 6px;
+    transition: background .15s;
+  }
+
+  .hero-cta:hover { background: var(--zg-red-light); }
+
+  /* SECTION */
+  .section {
+    padding: 4rem 2rem;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .section-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--zg-red);
+    margin-bottom: 0.5rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--zg-navy);
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.01em;
+  }
+
+  .section-intro {
+    font-size: 15px;
+    color: var(--zg-muted);
+    max-width: 620px;
+    margin-bottom: 2.5rem;
+    line-height: 1.65;
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid var(--zg-border);
+  }
+
+  /* MATCH SECTION */
+  .match-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+  }
+
+  .match-card {
+    background: var(--zg-accent-bg);
+    border: 1px solid var(--zg-border);
+    border-left: 3px solid var(--zg-navy);
+    border-radius: 6px;
+    padding: 1.25rem 1.25rem 1.25rem 1rem;
+  }
+
+  .match-card.highlight { border-left-color: var(--zg-red); }
+
+  .match-label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--zg-muted);
+    margin-bottom: 0.35rem;
+  }
+
+  .match-req {
+    font-size: 13px;
+    color: var(--zg-text);
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+    line-height: 1.4;
+  }
+
+  .match-answer {
+    font-size: 13px;
+    color: var(--zg-muted);
+    line-height: 1.5;
+  }
+
+  .match-tick {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: var(--zg-red);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 11px;
+    text-align: center;
+    line-height: 18px;
+    margin-right: 6px;
+    flex-shrink: 0;
+    float: left;
+    margin-top: 2px;
+  }
+
+  /* PORTFOLIO GRID */
+  .filter-bar {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 1.75rem;
+  }
+
+  .filter-btn {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 16px;
+    border-radius: 20px;
+    border: 1.5px solid var(--zg-border);
+    background: transparent;
+    color: var(--zg-muted);
+    cursor: pointer;
+    transition: all .15s;
+  }
+
+  .filter-btn.active, .filter-btn:hover {
+    background: var(--zg-navy);
+    border-color: var(--zg-navy);
+    color: #fff;
+  }
+
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+  }
+
+  .p-card {
+    border: 1px solid var(--zg-border);
+    border-radius: 8px;
+    overflow: hidden;
+    background: var(--zg-white);
+    transition: box-shadow .2s, transform .2s;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .p-card:hover {
+    box-shadow: 0 4px 20px rgba(26,48,87,0.12);
+    transform: translateY(-2px);
+  }
+
+  .p-thumb {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    display: block;
+    background: var(--zg-silver);
+  }
+
+  .p-thumb-placeholder {
+    width: 100%;
+    aspect-ratio: 16/9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    background: var(--zg-accent-bg);
+  }
+
+  .p-body {
+    padding: 14px 16px 16px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .p-tag {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--zg-red);
+    margin-bottom: 5px;
+  }
+
+  .p-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--zg-navy);
+    margin-bottom: 5px;
+    line-height: 1.35;
+  }
+
+  .p-desc {
+    font-size: 13px;
+    color: var(--zg-muted);
+    line-height: 1.55;
+    flex: 1;
+    margin-bottom: 12px;
+  }
+
+  .p-link {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--zg-navy);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    border: 1px solid var(--zg-navy);
+    padding: 4px 12px;
+    border-radius: 4px;
+    align-self: flex-start;
+    transition: all .15s;
+  }
+
+  .p-link:hover { background: var(--zg-navy); color: #fff; }
+
+  .p-ref {
+    font-size: 12px;
+    color: var(--zg-muted);
+    font-style: italic;
+  }
+
+  /* WAS SOCIAL SAMPLE */
+  .was-preview {
+    background: #0a2240;
+    border-radius: 6px;
+    padding: 14px;
+    margin-bottom: 8px;
+    color: #fff;
+  }
+  .was-preview-logo {
+    font-size: 10px;
+    font-weight: 700;
+    background: #1a5fa0;
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 3px;
+    letter-spacing: 0.05em;
+    margin-bottom: 8px;
+  }
+  .was-preview-text {
+    font-size: 12px;
+    line-height: 1.5;
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 8px;
+  }
+  .was-preview-stat {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 2px;
+  }
+  .was-preview-label {
+    font-size: 10px;
+    color: rgba(255,255,255,0.6);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  /* SKILLS */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+  }
+
+  .skill-group { }
+
+  .skill-group-title {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--zg-navy);
+    border-bottom: 2px solid var(--zg-red);
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+  }
+
+  .skill-item {
+    font-size: 13px;
+    color: var(--zg-muted);
+    padding: 3px 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .skill-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--zg-red);
+    flex-shrink: 0;
+  }
+
+  /* TIMELINE */
+  .timeline { position: relative; padding-left: 1.5rem; }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 5px; top: 6px; bottom: 0;
+    width: 2px;
+    background: var(--zg-border);
+  }
+
+  .tl-item {
+    position: relative;
+    margin-bottom: 1.75rem;
+  }
+
+  .tl-dot {
+    position: absolute;
+    left: -1.5rem;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--zg-red);
+    border: 2px solid var(--zg-white);
+    box-shadow: 0 0 0 2px var(--zg-red);
+  }
+
+  .tl-period {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--zg-red);
+    letter-spacing: 0.04em;
+    margin-bottom: 2px;
+  }
+
+  .tl-role {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--zg-navy);
+    margin-bottom: 1px;
+  }
+
+  .tl-org {
+    font-size: 13px;
+    color: var(--zg-muted);
+    margin-bottom: 6px;
+  }
+
+  .tl-bullets {
+    list-style: none;
+    padding: 0;
+  }
+
+  .tl-bullets li {
+    font-size: 13px;
+    color: var(--zg-muted);
+    padding: 2px 0 2px 14px;
+    position: relative;
+    line-height: 1.5;
+  }
+
+  .tl-bullets li::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 9px;
+    width: 5px; height: 1.5px;
+    background: var(--zg-red);
+  }
+
+  /* CONTACT */
+  .contact-bar {
+    background: var(--zg-navy);
+    color: #fff;
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+
+  .contact-bar h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .contact-bar p {
+    color: rgba(255,255,255,0.7);
+    font-size: 14px;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-links {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.25);
+    color: #fff;
+    text-decoration: none;
+    padding: 9px 20px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: background .15s;
+  }
+
+  .contact-link:hover { background: rgba(255,255,255,0.2); }
+
+  .contact-link.primary {
+    background: var(--zg-red);
+    border-color: var(--zg-red);
+  }
+
+  .contact-link.primary:hover { background: var(--zg-red-light); border-color: var(--zg-red-light); }
+
+  /* FOOTER */
+  footer {
+    background: var(--zg-navy-dark);
+    border-top: 3px solid var(--zg-red);
+    padding: 1.25rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  footer p { font-size: 12px; color: rgba(255,255,255,0.5); }
+
+  footer a { color: rgba(255,255,255,0.5); text-decoration: none; font-size: 12px; }
+  footer a:hover { color: #fff; }
+
+  /* UTIL */
+  .hidden { display: none !important; }
+
+  @media (max-width: 640px) {
+    nav { padding: 0 1rem; }
+    .nav-links { display: none; }
+    .hero { padding: 3rem 1rem 2.5rem; }
+    .section { padding: 2.5rem 1rem; }
+    footer { flex-direction: column; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav aria-label="Hauptnavigation">
+  <a class="nav-brand" href="#">
+    <div class="nav-logo">
+      <img src="https://www.zg.ch/jobs/directlink/1007899001/assets/images/logo-ktzg.svg" alt="Kanton Zug Logo" onerror="this.style.display='none';this.parentElement.innerHTML='<span style=\'font-size:11px;font-weight:700;color:#1a3057\'>ZG</span>'">
+    </div>
+    <div>
+      <div class="nav-name">Erisa Gashi</div>
+      <div class="nav-sub">Bewerbung GIBZ Zug</div>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#match">Anforderungen</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#erfahrung">Erfahrung</a></li>
+    <li><a href="#kontakt">Kontakt</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <p class="hero-eyebrow">Bewerbungsdossier für das GIBZ Zug</p>
+  <img class="hero-photo" src="https://pms.imgix.net/7897dcab3d659f4a420c72a9ab944568?w=220&h=220&crop=faces&fit=crop&auto=compress,format&q=80" alt="Erisa Gashi" onerror="this.style.display='none'">
+  <h1 class="hero-name">Erisa Gashi</h1>
+  <p class="hero-title">Fachperson Marketing &amp; Kommunikation &nbsp;·&nbsp; Luzern</p>
+  <div class="hero-tags">
+    <span class="hero-tag">Content-Strategie</span>
+    <span class="hero-tag">Social Media</span>
+    <span class="hero-tag">Event-Organisation</span>
+    <span class="hero-tag">CMS / Website</span>
+    <span class="hero-tag">Multimedia</span>
+    <span class="hero-tag">Generative KI</span>
+    <span class="hero-tag">DE / EN / FR</span>
+  </div>
+  <a class="hero-cta" href="mailto:erisa_01@icloud.com">
+    ✉ erisa_01@icloud.com
+  </a>
+</header>
+
+<!-- ANFORDERUNGEN MATCH -->
+<section class="section" id="match">
+  <p class="section-eyebrow">Passung zur Stelle</p>
+  <h2 class="section-title">Ihre Anforderungen. Mein Profil.</h2>
+  <p class="section-intro">Jede Anforderung aus der Ausschreibung ist mit konkreter Berufserfahrung abgedeckt.</p>
+
+  <div class="match-grid">
+    <div class="match-card highlight">
+      <p class="match-label">Anforderung</p>
+      <p class="match-req">Operative Gesamtverantwortung inkl. Personalführung</p>
+      <p class="match-answer">Projektleitung und Agentursteuerung bei V-ZUG; fachliche Verantwortung für externe Dienstleister und Stakeholder aus mehreren Bereichen.</p>
+    </div>
+    <div class="match-card">
+      <p class="match-label">Anforderung</p>
+      <p class="match-req">Kommunikationsmassnahmen Grundbildung &amp; Weiterbildung</p>
+      <p class="match-answer">Mehrsprachige Content-Strategien (DE/EN/FR/IT) mit Kanallogik und KPI-Steuerung. Abschluss BA, laufender MA in Kommunikationswiss., Nebenfach Berufs- und Wirtschaftspädagogik.</p>
+    </div>
+    <div class="match-card">
+      <p class="match-label">Anforderung</p>
+      <p class="match-req">Website, SharePoint, GIBZ-App, Informationsbildschirme</p>
+      <p class="match-answer">CMS-Pflege (Drupal, WordPress, Censhare, SharePoint) bei WAS Luzern und V-ZUG. Digital Signage bei jls digital.</p>
+    </div>
+    <div class="match-card highlight">
+      <p class="match-label">Anforderung</p>
+      <p class="match-req">Eigenständige Erstellung multimedialer Beiträge</p>
+      <p class="match-answer">Foto, Video, Canva-Templates (heute noch im Einsatz bei WAS), Kurzvideos mit CapCut und KI-Tools (Higgsfield, Kling).</p>
+    </div>
+    <div class="match-card">
+      <p class="match-label">Anforderung</p>
+      <p class="match-req">Events, Messen, Informationsanlässe</p>
+      <p class="match-answer">Eigenständige Organisation des forum Arbeit bei WAS Luzern sowie weiterer Informations- und Mitarbeiteranlässe.</p>
+    </div>
+    <div class="match-card">
+      <p class="match-label">Anforderung</p>
+      <p class="match-req">Höhere Ausbildung Kommunikation &amp; Marketing</p>
+      <p class="match-answer">MA Kommunikationswissenschaft Uni Zürich (laufend); BA Kommunikationswissenschaft Uni Zürich 2024.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- PORTFOLIO -->
+<section class="section" id="portfolio">
+  <p class="section-eyebrow">Arbeitsbeispiele</p>
+  <h2 class="section-title">Portfolio</h2>
+  <p class="section-intro">Eine Auswahl meiner Arbeiten bei V-ZUG AG und WAS Wirtschaft Arbeit Soziales.</p>
+
+  <div class="filter-bar">
+    <button class="filter-btn active" onclick="filterCards('all',this)">Alle</button>
+    <button class="filter-btn" onclick="filterCards('web',this)">Website</button>
+    <button class="filter-btn" onclick="filterCards('campaign',this)">Kampagne</button>
+    <button class="filter-btn" onclick="filterCards('social',this)">Social Media</button>
+    <button class="filter-btn" onclick="filterCards('motion',this)">Motion / Canva</button>
+  </div>
+
+  <div class="portfolio-grid" id="portfolio-grid">
+
+    <!-- VZUG Campaign -->
+    <div class="p-card" data-cat="campaign">
+      <div class="p-thumb-placeholder" style="background:#1a1a2e;color:#fff;font-size:2rem;flex-direction:column;gap:6px">
+        <span style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.5)">V-ZUG AG &nbsp;·&nbsp; Kampagne</span>
+        🔥
+      </div>
+      <div class="p-body">
+        <p class="p-tag">V-ZUG AG &nbsp;·&nbsp; Kampagne</p>
+        <h3 class="p-title">Cooktops – Curated for Your Home</h3>
+        <p class="p-desc">Vollständige Kochfeld-Kampagne, konzipiert und umgesetzt zusammen mit einer Arbeitskollegin. Kampagnen-Landingpage mit Produktwelt, Bildsprache und mehrsprachigem Content.</p>
+        <a class="p-link" href="https://www.vzug.com/ch/de/cooktops-curated-for-your-home" target="_blank" rel="noopener">↗ Website öffnen</a>
+      </div>
+    </div>
+
+    <!-- Regenerieren -->
+    <div class="p-card" data-cat="web">
+      <div class="p-thumb-placeholder" style="background:#eef1f7">🌀</div>
+      <div class="p-body">
+        <p class="p-tag">V-ZUG AG &nbsp;·&nbsp; Website</p>
+        <h3 class="p-title">Produktseite Regenerieren</h3>
+        <p class="p-desc">Landingpage zur Backofenfunktion «Regenerieren» mit Nutzungsguide und Rezeptinhalten in vier Sprachen.</p>
+        <a class="p-link" href="https://www.vzug.com/ch/de/service/product-usage/regenerate" target="_blank" rel="noopener">↗ Website öffnen</a>
+      </div>
+    </div>
+
+    <!-- Professional Baking -->
+    <div class="p-card" data-cat="web">
+      <div class="p-thumb-placeholder" style="background:#eef1f7">🍞</div>
+      <div class="p-body">
+        <p class="p-tag">V-ZUG AG &nbsp;·&nbsp; Website</p>
+        <h3 class="p-title">Produktseite Professional Baking</h3>
+        <p class="p-desc">Contentseite zur professionellen Backfunktion. Übersetzung technischer Features in nutzenorientierte Sprache.</p>
+        <a class="p-link" href="https://www.vzug.com/ch/de/service/product-usage/professional-baking" target="_blank" rel="noopener">↗ Website öffnen</a>
+      </div>
+    </div>
+
+    <!-- Vacuisine -->
+    <div class="p-card" data-cat="web">
+      <div class="p-thumb-placeholder" style="background:#eef1f7">🧪</div>
+      <div class="p-body">
+        <p class="p-tag">V-ZUG AG &nbsp;·&nbsp; Website</p>
+        <h3 class="p-title">Produktseite Vacuisine</h3>
+        <p class="p-desc">Erklärende Seite zur Vakuumgarmethode mit Rezeptintegration und mehrsprachiger Umsetzung.</p>
+        <a class="p-link" href="https://www.vzug.com/ch/de/service/product-usage/vacuisine" target="_blank" rel="noopener">↗ Website öffnen</a>
+      </div>
+    </div>
+
+    <!-- Steaming -->
+    <div class="p-card" data-cat="web">
+      <div class="p-thumb-placeholder" style="background:#eef1f7">💨</div>
+      <div class="p-body">
+        <p class="p-tag">V-ZUG AG &nbsp;·&nbsp; Website</p>
+        <h3 class="p-title">Produktseite Steaming</h3>
+        <p class="p-desc">Mehrsprachige Content-Seite zum Dampfgaren mit nutzenorientierter Textarbeit.</p>
+        <a class="p-link" href="https://www.vzug.com/ch/de/service/product-usage/steaming" target="_blank" rel="noopener">↗ Website öffnen</a>
+      </div>
+    </div>
+
+    <!-- Soft Roasting -->
+    <div class="p-card" data-cat="web">
+      <div class="p-thumb-placeholder" style="background:#eef1f7">🥩</div>
+      <div class="p-body">
+        <p class="p-tag">V-ZUG AG &nbsp;·&nbsp; Website</p>
+        <h3 class="p-title">Produktseite Soft Roasting</h3>
+        <p class="p-desc">Landingpage zur Niedertemperaturgarmethode Soft Roasting, inkl. visuelles Storytelling.</p>
+        <a class="p-link" href="https://www.vzug.com/ch/de/service/product-usage/soft-roasting" target="_blank" rel="noopener">↗ Website öffnen</a>
+      </div>
+    </div>
+
+    <!-- Hot Air with Steaming -->
+    <div class="p-card" data-cat="web">
+      <div class="p-thumb-placeholder" style="background:#eef1f7">🌬️</div>
+      <div class="p-body">
+        <p class="p-tag">V-ZUG AG &nbsp;·&nbsp; Website</p>
+        <h3 class="p-title">Produktseite Hot Air with Steaming</h3>
+        <p class="p-desc">Kombi-Funktionsseite mit Heissluft und Dampf, viersprachige Umsetzung DE / EN / FR / IT.</p>
+        <a class="p-link" href="https://www.vzug.com/ch/de/service/product-usage/hot-air-with-steaming" target="_blank" rel="noopener">↗ Website öffnen</a>
+      </div>
+    </div>
+
+    <!-- Hot Air Humid -->
+    <div class="p-card" data-cat="web">
+      <div class="p-thumb-placeholder" style="background:#eef1f7">🌡️</div>
+      <div class="p-body">
+        <p class="p-tag">V-ZUG AG &nbsp;·&nbsp; Website</p>
+        <h3 class="p-title">Produktseite Hot Air Humid</h3>
+        <p class="p-desc">Content-Seite zur Feuchtluftfunktion mit Anwendungstipps und mehrsprachigem Texten.</p>
+        <a class="p-link" href="https://www.vzug.com/ch/de/service/product-usage/hot-air-humid" target="_blank" rel="noopener">↗ Website öffnen</a>
+      </div>
+    </div>
+
+    <!-- WAS LinkedIn -->
+    <div class="p-card" data-cat="social motion">
+      <div class="p-thumb-placeholder" style="background:#0a2240;color:rgba(255,255,255,.85);flex-direction:column;gap:6px">
+        <span style="font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.45)">WAS Wirtschaft Arbeit Soziales</span>
+        <span style="font-size:2rem">📱</span>
+      </div>
+      <div class="p-body">
+        <p class="p-tag">WAS Wirtschaft Arbeit Soziales &nbsp;·&nbsp; LinkedIn</p>
+        <h3 class="p-title">LinkedIn-Kommunikation</h3>
+        <p class="p-desc">Monatliche Statistik-Posts zur kantonalen Arbeitslosigkeit, Stelleninserate mit animiertem Videoformat sowie Canva-Vorlagen mit bewegten Elementen, die WAS Luzern heute noch aktiv einsetzt.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ERFAHRUNG -->
+<section class="section" id="erfahrung">
+  <p class="section-eyebrow">Werdegang</p>
+  <h2 class="section-title">Berufserfahrung</h2>
+  <p class="section-intro">Relevante Stationen mit direktem Bezug zur ausgeschriebenen Stelle.</p>
+
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <p class="tl-period">Okt. 2025 – Okt. 2026</p>
+      <p class="tl-role">Praktikantin Global Product Marketing &amp; Creative Studio</p>
+      <p class="tl-org">V-ZUG AG, Zug</p>
+      <ul class="tl-bullets">
+        <li>Content-Strategien für Website, Social Media und Newsletter, daten und KPI-getrieben</li>
+        <li>Kommunikationsmassnahmen in vier Sprachen (DE, EN, FR, IT) übersetzen</li>
+        <li>Gen. KI (Higgsfield, Kling, ChatGPT) als Produktionstool für Content-Workflows</li>
+        <li>Agentursteuerung und Sparring mit Stakeholdern aus verschiedenen Bereichen</li>
+      </ul>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <p class="tl-period">Feb. 2025 – Mai 2025</p>
+      <p class="tl-role">Beraterin Digitale Kommunikation (Werkstudentin)</p>
+      <p class="tl-org">jls digital, Luzern / Zürich</p>
+      <ul class="tl-bullets">
+        <li>Erstellung digitaler Kommunikationsmassnahmen von der Konzeption bis zur Publikation</li>
+        <li>Betreuung von Digital-Signage-Projekten für verschiedene Kunden</li>
+        <li>Operative Projektverantwortung und Stakeholder-Abstimmung</li>
+      </ul>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <p class="tl-period">Aug. 2024 – Jan. 2025</p>
+      <p class="tl-role">Praktikum Unternehmenskommunikation</p>
+      <p class="tl-org">WAS Wirtschaft Arbeit Soziales, Luzern</p>
+      <ul class="tl-bullets">
+        <li>Produktion von Foto, Video und visuellem Storytelling</li>
+        <li>Website- und Intranetpflege (CMS), Newsletter, Social-Media-Redaktion</li>
+        <li>Organisation von Events (u.&thinsp;a. forum Arbeit)</li>
+        <li>Change-Kommunikation intern; Canva-Vorlagen, die WAS heute noch einsetzt</li>
+      </ul>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <p class="tl-period">Juli 2022 – Juni 2024</p>
+      <p class="tl-role">Junior Client Success Manager</p>
+      <p class="tl-org">Cognita AG / blueReport, Zürich &amp; Berlin</p>
+      <ul class="tl-bullets">
+        <li>Medienbeobachtung und -analyse, DACH-Region</li>
+        <li>Leitung Produktschulungen und Kundenpräsentationen</li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="margin-top:2.5rem">
+    <p class="section-eyebrow">Ausbildung</p>
+    <div class="timeline" style="margin-top:1rem">
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <p class="tl-period">Feb. 2025 – laufend</p>
+        <p class="tl-role">MA Kommunikationswissenschaft und Medienforschung</p>
+        <p class="tl-org">Universität Zürich &nbsp;·&nbsp; Nebenfach: Berufs- und Wirtschaftspädagogik</p>
+        <ul class="tl-bullets">
+          <li>Masterarbeit: Einfluss von KI auf Berufsbilder – besonders relevant für Berufsfachschulen</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <p class="tl-period">Sept. 2020 – Juni 2024</p>
+        <p class="tl-role">BA Kommunikationswissenschaft</p>
+        <p class="tl-org">Universität Zürich</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- SKILLS -->
+<section class="section" id="skills" style="padding-top:2.5rem">
+  <p class="section-eyebrow">Kompetenzen</p>
+  <h2 class="section-title">Tools &amp; Fähigkeiten</h2>
+  <div class="skills-grid" style="margin-top:1.5rem">
+    <div class="skill-group">
+      <p class="skill-group-title">Kommunikation</p>
+      <p class="skill-item"><span class="skill-dot"></span>Interne &amp; externe Kommunikation</p>
+      <p class="skill-item"><span class="skill-dot"></span>Social Media Management</p>
+      <p class="skill-item"><span class="skill-dot"></span>Mehrsprachiges Texten (DE/EN/FR)</p>
+      <p class="skill-item"><span class="skill-dot"></span>Change-Kommunikation</p>
+      <p class="skill-item"><span class="skill-dot"></span>Newsletter &amp; Intranet</p>
+    </div>
+    <div class="skill-group">
+      <p class="skill-group-title">Strategie &amp; Planung</p>
+      <p class="skill-item"><span class="skill-dot"></span>Konzeptentwicklung</p>
+      <p class="skill-item"><span class="skill-dot"></span>Projektkoordination</p>
+      <p class="skill-item"><span class="skill-dot"></span>Agentursteuerung</p>
+      <p class="skill-item"><span class="skill-dot"></span>Stakeholder-Beratung</p>
+      <p class="skill-item"><span class="skill-dot"></span>Event-Organisation</p>
+    </div>
+    <div class="skill-group">
+      <p class="skill-group-title">Tools &amp; Plattformen</p>
+      <p class="skill-item"><span class="skill-dot"></span>CMS: Drupal / WordPress / Censhare</p>
+      <p class="skill-item"><span class="skill-dot"></span>Microsoft SharePoint / Teams</p>
+      <p class="skill-item"><span class="skill-dot"></span>Canva / Canva AI</p>
+      <p class="skill-item"><span class="skill-dot"></span>Adobe Creative Suite</p>
+      <p class="skill-item"><span class="skill-dot"></span>Meta Ads / Analytics / SEO</p>
+    </div>
+    <div class="skill-group">
+      <p class="skill-group-title">Multimedia &amp; KI</p>
+      <p class="skill-item"><span class="skill-dot"></span>Foto &amp; Video Content</p>
+      <p class="skill-item"><span class="skill-dot"></span>CapCut / Videobearbeitung</p>
+      <p class="skill-item"><span class="skill-dot"></span>ChatGPT / Higgsfield / Kling</p>
+      <p class="skill-item"><span class="skill-dot"></span>Figma</p>
+      <p class="skill-item"><span class="skill-dot"></span>Qualitätssicherung</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<div class="contact-bar" id="kontakt">
+  <h2>Gespräch vereinbaren</h2>
+  <p>Ich freue mich, mich persönlich vorzustellen und zu zeigen, wie ich zur Kommunikation des GIBZ beitragen kann.</p>
+  <div class="contact-links">
+    <a class="contact-link primary" href="mailto:erisa_01@icloud.com">✉ erisa_01@icloud.com</a>
+    <a class="contact-link" href="tel:+41789765405">☎ +41 78 976 54 05</a>
+
+  </div>
+</div>
+
+<footer>
+  <p>Erisa Gashi &nbsp;·&nbsp; Marketing &amp; Kommunikation &nbsp;·&nbsp; Luzern 2026</p>
+  <a href="https://www.zg.ch/jobs/offene-stellen/fachperson-kommunikation-und-marketing-mit-leitungsfunktion/3114a3e2-d5c3-48f3-971c-518d877b32e6" target="_blank" rel="noopener">↗ Stelleninserat GIBZ</a>
+</footer>
+
+<script>
+function filterCards(cat, btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.p-card').forEach(card => {
+    if (cat === 'all') {
+      card.style.display = 'flex';
+    } else {
+      card.style.display = card.dataset.cat && card.dataset.cat.includes(cat) ? 'flex' : 'none';
+    }
+  });
+}
+</script>
+
+</body>
+</html>
